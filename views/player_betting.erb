@@ -1,0 +1,6 @@
+<h4><%= session[:player_name] %>'s chip is <strong><%= session[:player_chip] %></strong> now.</h4>
+<h4>Please bet.</h4>
+<form action="/player_betting" method="post">
+	<input type="text" name="player_betting" class="input">
+	<input type="submit" name="btn"  value="Submit" class="btn btn-success">
+</form>
